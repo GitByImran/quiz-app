@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Quiz Application</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-title">Quiz Application</h1>
+      <div id="user-info">
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <input type="text" id="id" placeholder="Enter your ID" required />
+        <button id="start" class="button-style">Start Quiz</button>
+      </div>
+      <div id="quiz-container" style="display: none">
+        <div id="quiz"></div>
+        <div id="navigation">
+          <button id="prev" class="button-style" disabled>Previous</button>
+          <button id="next" class="button-style">Next</button>
+          <button id="submit" class="button-style" style="display: none">
+            Submit
+          </button>
+          <button id="cancel" class="button-style">Cancel Quiz</button>
+        </div>
+      </div>
+      <div id="result" style="display: none">
+        <div id="result-content"></div>
+        <button id="start-again" class="button-style">Start Again</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
