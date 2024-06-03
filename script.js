@@ -164,7 +164,7 @@ function submitQuiz() {
         const userSelectedAnswers = userAnswers[index];
 
         // Compare the arrays directly
-        if (arraysEqual(correctAnswers, userSelectedAnswers)) {
+        if (calculateCorrectAnswer(correctAnswers, userSelectedAnswers)) {
             score++;
         }
     });
